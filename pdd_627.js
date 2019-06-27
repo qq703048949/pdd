@@ -966,7 +966,7 @@ i = function() {
                     ;
                     var ie = {};
                     ie[p("0x81", "2xv*")] = function() {
-                        this[H] = i(F[E][O] ? F[E][O] : "")
+                        this[H] = i(href ? href : "")
                     }
                         ,
                         ie[p("0x79", "1(8m")] = function() {
@@ -2777,7 +2777,8 @@ i = function() {
         }
     ])
 }
-function get_pdd() {
+function get_pdd(thref) {
+    href = thref
     return i()()['messagePackSync']()
 }
-console.log(get_pdd())
+console.log(get_pdd('http://yangkeduo.com'))
