@@ -1,6 +1,12 @@
+
+
+
+
+
 a = function (e) {
     return typeof e
 }
+
 i = function() {
     return function(e) {
         var t = {};
@@ -310,31 +316,31 @@ i = function() {
                             return e + t
                         }, b = function(e, t) {
                             return e & t
-                        }, y = void 0, v = void 0, w = void 0, _ = "", k = e[s], x = 0, S = function(e, t) {
+                        }, y = void 0, v = void 0, _ = void 0, w = "", k = e[s], x = 0, S = function(e, t) {
                             return e * t
                         }(t(parseInt, function(e, t) {
                             return e / t
                         }(k, 3)), 3); n(x, S); )
                             y = e[x++],
                                 v = e[x++],
-                                w = e[x++],
-                                _ += r(r(o(u[i(y, 2)], u[a(c(l(y, 4), i(v, 4)), 63)]), u[a(p(l(v, 2), i(w, 6)), 63)]), u[a(w, 63)]);
+                                _ = e[x++],
+                                w += r(r(o(u[i(y, 2)], u[a(c(l(y, 4), i(v, 4)), 63)]), u[a(p(l(v, 2), i(_, 6)), 63)]), u[a(_, 63)]);
                         var O = function(e, t) {
                             return e - t
                         }(k, S);
                         return d(O, 1) ? (y = e[x],
-                            _ += o(h(u[m(y, 2)], u[function(e, t) {
+                            w += o(h(u[m(y, 2)], u[function(e, t) {
                                 return e & t
                             }(l(y, 4), 63)]), "==")) : d(O, 2) && (y = e[x++],
                             v = e[x],
-                            _ += h(g(g(u[m(y, 2)], u[b(p(function(e, t) {
+                            w += h(g(g(u[m(y, 2)], u[b(p(function(e, t) {
                                 return e << t
                             }(y, 4), function(e, t) {
                                 return e >>> t
                             }(v, 4)), 63)]), u[b(function(e, t) {
                                 return e << t
                             }(v, 2), 63)]), "=")),
-                            t(f, _)
+                            t(f, w)
                     }
                         ,
                         d[o("0x9", "j)OB")] = function(e) {
@@ -368,25 +374,25 @@ i = function() {
                                 return e >> t
                             }, v = function(e, t) {
                                 return e & t
-                            }, w = function(e, t) {
+                            }, _ = function(e, t) {
                                 return e < t
-                            }, _ = [], k = 0, x = 0; t(x, e[s]); x += 1) {
+                            }, w = [], k = 0, x = 0; t(x, e[s]); x += 1) {
                                 var S = e[a](x);
-                                n(S, 0) && r(S, 127) ? (_[l](S),
+                                n(S, 0) && r(S, 127) ? (w[l](S),
                                     k += 1) : r(128, 80) && o(S, 2047) ? (k += 2,
-                                    _[l](i(192, u(31, p(S, 6)))),
-                                    _[l](i(128, f(63, S)))) : (d(S, 2048) && h(S, 55295) || d(S, 57344) && h(S, 65535)) && (k += 3,
-                                    _[l](m(224, g(15, p(S, 12)))),
-                                    _[l](m(128, b(63, y(S, 6)))),
-                                    _[l](m(128, v(63, S))))
+                                    w[l](i(192, u(31, p(S, 6)))),
+                                    w[l](i(128, f(63, S)))) : (d(S, 2048) && h(S, 55295) || d(S, 57344) && h(S, 65535)) && (k += 3,
+                                    w[l](m(224, g(15, p(S, 12)))),
+                                    w[l](m(128, b(63, y(S, 6)))),
+                                    w[l](m(128, v(63, S))))
                             }
-                            for (var O = 0; w(O, _[s]); O += 1)
-                                _[O] &= 255;
+                            for (var O = 0; _(O, w[s]); O += 1)
+                                w[O] &= 255;
                             return function(e, t) {
                                 return e <= t
-                            }(k, 255) ? [0, k][c](_) : [function(e, t) {
+                            }(k, 255) ? [0, k][c](w) : [function(e, t) {
                                 return e >> t
-                            }(k, 8), v(k, 255)][c](_)
+                            }(k, 8), v(k, 255)][c](w)
                         }
                         ,
                         d.es = function(e) {
@@ -671,8 +677,8 @@ i = function() {
                         , b = p("0x4", "(DVf")
                         , y = p("0x5", "o0J[")
                         , v = p("0x6", "Bx!c")
-                        , w = p("0x7", "hI@*")
-                        , _ = p("0x8", "%J*e")
+                        , _ = p("0x7", "hI@*")
+                        , w = p("0x8", "%J*e")
                         , k = p("0x9", "Qcn!")
                         , x = p("0xa", "KX$#")
                         , S = p("0xb", "%J*e")
@@ -714,7 +720,7 @@ i = function() {
                                     F = window;
                                     continue;
                                 case "4":
-                                    Y = p("0x1e", "7sIF")in F[w];
+                                    Y = p("0x1e", "7sIF")in F[_];
                                     continue
                             }
                             break
@@ -774,7 +780,7 @@ i = function() {
                         ,
                         J[p("0x70", "cZ6)")] = function() {
                             var e = [][A](c.es("db"));
-                            this[H]= []
+                            this[H] = []
                             return this[H][I](function(t) {
                                 e = e[A](c.en(t[D]), c.en(t[C]), c.es(t[T]), c.en(t[P]))
                             }),
@@ -792,7 +798,7 @@ i = function() {
                         ,
                         Z[p("0x73", "Ja(b")] = function() {
                             var e = [][A](c.es("wt"));
-                            this[H]= []
+                            this[H] = []
                             return this[H][I](function(t) {
                                 e = e[A](c.en(t[D]), c.en(t[C]), c.es(t[T]), c.en(t[P]))
                             }),
@@ -818,7 +824,10 @@ i = function() {
                     ;
                     var ee = {};
                     ee[p("0x77", "zQEU")] = function() {
-                        this[H] = []
+                        this[H] = {
+                            "href": "http://yangkeduo.com/",
+                            "port": ""
+                        }
                     }
                         ,
                         ee[p("0x78", "Ja(b")] = function() {
@@ -836,7 +845,7 @@ i = function() {
                         ,
                         ee[p("0x79", "1(8m")] = function() {
                             var e = [][A](c.es("zc"));
-                            this[H]= []
+                            this[H] = []
                             return this[H][I](function(t) {
                                 e = e[A](c.en(t.scrollTop), c.en(t[P]))
                             }),
@@ -859,11 +868,11 @@ i = function() {
                     ne[p("0x7c", "7z7d")] = function() {
                         this[H] = {},
                             this[H][k] = F[x][k],
-                            this[H][_] = F[x][_]
+                            this[H][w] = F[x][w]
                     }
                         ,
                         ne[p("0x7d", "Qcn!")] = function() {
-                            return G([][A](c.es("lh"), c.en(826), c.en(1536)))
+                            return G([][A](c.es("lh"), c.en(1040), c.en(1920)))
                         }
                     ;
                     var re = {};
@@ -966,7 +975,7 @@ i = function() {
                     ;
                     var ie = {};
                     ie[p("0x81", "2xv*")] = function() {
-                        this[H] = i(href ? href : "")
+                        this[H] = i(F[E][O] ? F[E][O] : "")
                     }
                         ,
                         ie[p("0x79", "1(8m")] = function() {
@@ -1025,9 +1034,9 @@ i = function() {
                             e[p("0x92", "kSgJ")] = p("0x93", "BotX"),
                             e[p("0x94", "o5mZ")] = p("0x95", "XimS"),
                             e[p("0x96", "h0NV")] = p("0x97", "7z7d"),
-                            F[w][v](e[p("0x98", "h0NV")], J, !0),
-                            Y ? F[w][v](e[p("0x99", "7sIF")], $, !0) : (F[w][v](e[p("0x9a", "FWpL")], Z, !0),
-                                F[w][v](e[p("0x9b", "Bx!c")], ee, !0))
+                            F[_][v](e[p("0x98", "h0NV")], J, !0),
+                            Y ? F[_][v](e[p("0x99", "7sIF")], $, !0) : (F[_][v](e[p("0x9a", "FWpL")], Z, !0),
+                                F[_][v](e[p("0x9b", "Bx!c")], ee, !0))
                     }
                     function de() {
                         [ee, Z, $, J][I](function(e) {
@@ -1151,8 +1160,12 @@ i = function() {
                     ue[p("0x8c", "o(R[")] = function() {
                         this[H] = l()
                     }
-                        ,
+                    ,
                         ue[p("0x8d", "FWpL")] = function() {
+                            this[H] =  {
+                                "nano_cookie_fp": "XpdjXpdqn0gbn0Tono_Kor~e4QLSJO9RwAw7vBCI",
+                                "nano_storage_fp": "XpdjXpdqn0gbn0Tono_Kor~e4QLSJO9RwAw7vBCI"
+                            }
                             var e = this
                                 , t = p("0x8e", "aMpH")
                                 , n = p("0x8f", "zQEU")
@@ -1160,7 +1173,6 @@ i = function() {
                                 , o = {};
                             return o[t] = "ys",
                                 o[n] = "ut",
-                                this[H] = {nano_cookie_fp: "XpdjXpEYXqXqnqXanC_aCcs7340R_s8v18xi3kXL", nano_storage_fp: "XpdjXpEYXqXqnqXanC_aCcs7340R_s8v18xi3kXL"}
                                 Object.keys(this[H])[I](function(t) {
                                     var n = [][A](c.es(o[t]), c.es(e[H][t]));
                                     r[N](function(e, t) {
@@ -1189,6 +1201,19 @@ i = function() {
                         ge[p("0xed", "o5mZ")][p("0xee", ")w9L")] = function() {
                             return me()
 
+                        //     var e = {};
+                        //     return e[p("0xef", "5%pL")] = function(e, t) {
+                        //         return e(t)
+                        //     }
+                        //         ,
+                        //         e[p("0xf0", "h0NV")] = function(e) {
+                        //             return e()
+                        //         }
+                        //         ,
+                        //         new Promise(function(t) {
+                        //                 e[p("0xf1", "7qw^")](t, e[p("0xf2", "1(8m")](me))
+                        //             }
+                        //         )
                         }
                     ;
                     var be = new ge;
@@ -1219,13 +1244,13 @@ i = function() {
                         for (d = 0; d < s.length; d += 16) {
                             var y = l
                                 , v = u
-                                , w = p
-                                , _ = f;
+                                , _ = p
+                                , w = f;
                             u = b(u = b(u = b(u = b(u = g(u = g(u = g(u = g(u = m(u = m(u = m(u = m(u = h(u = h(u = h(u = h(u, p = h(p, f = h(f, l = h(l, u, p, f, s[d + 0], 7, -680876936), u, p, s[d + 1], 12, -389564586), l, u, s[d + 2], 17, 606105819), f, l, s[d + 3], 22, -1044525330), p = h(p, f = h(f, l = h(l, u, p, f, s[d + 4], 7, -176418897), u, p, s[d + 5], 12, 1200080426), l, u, s[d + 6], 17, -1473231341), f, l, s[d + 7], 22, -45705983), p = h(p, f = h(f, l = h(l, u, p, f, s[d + 8], 7, 1770035416), u, p, s[d + 9], 12, -1958414417), l, u, s[d + 10], 17, -42063), f, l, s[d + 11], 22, -1990404162), p = h(p, f = h(f, l = h(l, u, p, f, s[d + 12], 7, 1804603682), u, p, s[d + 13], 12, -40341101), l, u, s[d + 14], 17, -1502002290), f, l, s[d + 15], 22, 1236535329), p = m(p, f = m(f, l = m(l, u, p, f, s[d + 1], 5, -165796510), u, p, s[d + 6], 9, -1069501632), l, u, s[d + 11], 14, 643717713), f, l, s[d + 0], 20, -373897302), p = m(p, f = m(f, l = m(l, u, p, f, s[d + 5], 5, -701558691), u, p, s[d + 10], 9, 38016083), l, u, s[d + 15], 14, -660478335), f, l, s[d + 4], 20, -405537848), p = m(p, f = m(f, l = m(l, u, p, f, s[d + 9], 5, 568446438), u, p, s[d + 14], 9, -1019803690), l, u, s[d + 3], 14, -187363961), f, l, s[d + 8], 20, 1163531501), p = m(p, f = m(f, l = m(l, u, p, f, s[d + 13], 5, -1444681467), u, p, s[d + 2], 9, -51403784), l, u, s[d + 7], 14, 1735328473), f, l, s[d + 12], 20, -1926607734), p = g(p, f = g(f, l = g(l, u, p, f, s[d + 5], 4, -378558), u, p, s[d + 8], 11, -2022574463), l, u, s[d + 11], 16, 1839030562), f, l, s[d + 14], 23, -35309556), p = g(p, f = g(f, l = g(l, u, p, f, s[d + 1], 4, -1530992060), u, p, s[d + 4], 11, 1272893353), l, u, s[d + 7], 16, -155497632), f, l, s[d + 10], 23, -1094730640), p = g(p, f = g(f, l = g(l, u, p, f, s[d + 13], 4, 681279174), u, p, s[d + 0], 11, -358537222), l, u, s[d + 3], 16, -722521979), f, l, s[d + 6], 23, 76029189), p = g(p, f = g(f, l = g(l, u, p, f, s[d + 9], 4, -640364487), u, p, s[d + 12], 11, -421815835), l, u, s[d + 15], 16, 530742520), f, l, s[d + 2], 23, -995338651), p = b(p, f = b(f, l = b(l, u, p, f, s[d + 0], 6, -198630844), u, p, s[d + 7], 10, 1126891415), l, u, s[d + 14], 15, -1416354905), f, l, s[d + 5], 21, -57434055), p = b(p, f = b(f, l = b(l, u, p, f, s[d + 12], 6, 1700485571), u, p, s[d + 3], 10, -1894986606), l, u, s[d + 10], 15, -1051523), f, l, s[d + 1], 21, -2054922799), p = b(p, f = b(f, l = b(l, u, p, f, s[d + 8], 6, 1873313359), u, p, s[d + 15], 10, -30611744), l, u, s[d + 6], 15, -1560198380), f, l, s[d + 13], 21, 1309151649), p = b(p, f = b(f, l = b(l, u, p, f, s[d + 4], 6, -145523070), u, p, s[d + 11], 10, -1120210379), l, u, s[d + 2], 15, 718787259), f, l, s[d + 9], 21, -343485551),
                                 l = l + y >>> 0,
                                 u = u + v >>> 0,
-                                p = p + w >>> 0,
-                                f = f + _ >>> 0
+                                p = p + _ >>> 0,
+                                f = f + w >>> 0
                         }
                         return r.endian([l, u, p, f])
                     }
@@ -1428,7 +1453,7 @@ i = function() {
         }
         , function(e, t, n) {
             "use strict";
-            var r, o = n(0), i = n(11), a = n(12), s = n(13), c = n(3), l = 0, u = 4, p = 0, f = -2, d = -1, h = 1, m = 4, g = 2, b = 8, y = 9, v = 286, w = 30, _ = 19, k = 2 * v + 1, x = 15, S = 3, O = 258, E = O + S + 1, P = 42, C = 103, D = 113, T = 666, j = 1, A = 2, I = 3, N = 4;
+            var r, o = n(0), i = n(11), a = n(12), s = n(13), c = n(3), l = 0, u = 4, p = 0, f = -2, d = -1, h = 1, m = 4, g = 2, b = 8, y = 9, v = 286, _ = 30, w = 19, k = 2 * v + 1, x = 15, S = 3, O = 258, E = O + S + 1, P = 42, C = 103, D = 113, T = 666, j = 1, A = 2, I = 3, N = 4;
             function B(e, t) {
                 return e.msg = c[t],
                     t
@@ -1712,8 +1737,8 @@ i = function() {
                             this.good_match = 0,
                             this.nice_match = 0,
                             this.dyn_ltree = new o.Buf16(2 * k),
-                            this.dyn_dtree = new o.Buf16(2 * (2 * w + 1)),
-                            this.bl_tree = new o.Buf16(2 * (2 * _ + 1)),
+                            this.dyn_dtree = new o.Buf16(2 * (2 * _ + 1)),
+                            this.bl_tree = new o.Buf16(2 * (2 * w + 1)),
                             R(this.dyn_ltree),
                             R(this.dyn_dtree),
                             R(this.bl_tree),
@@ -2068,9 +2093,9 @@ i = function() {
                 , b = [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 0]
                 , y = [0, 0, 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 13]
                 , v = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 7]
-                , w = [16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 14, 1, 15]
-                , _ = new Array(2 * (s + 2));
-            o(_);
+                , _ = [16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 14, 1, 15]
+                , w = new Array(2 * (s + 2));
+            o(w);
             var k = new Array(2 * c);
             o(k);
             var x = new Array(512);
@@ -2308,26 +2333,26 @@ i = function() {
                     for (t = 0; t <= p; t++)
                         i[t] = 0;
                     for (e = 0; e <= 143; )
-                        _[2 * e + 1] = 8,
+                        w[2 * e + 1] = 8,
                             e++,
                             i[8]++;
                     for (; e <= 255; )
-                        _[2 * e + 1] = 9,
+                        w[2 * e + 1] = 9,
                             e++,
                             i[9]++;
                     for (; e <= 279; )
-                        _[2 * e + 1] = 7,
+                        w[2 * e + 1] = 7,
                             e++,
                             i[7]++;
                     for (; e <= 287; )
-                        _[2 * e + 1] = 8,
+                        w[2 * e + 1] = 8,
                             e++,
                             i[8]++;
-                    for (R(_, s + 1, i),
+                    for (R(w, s + 1, i),
                              e = 0; e < c; e++)
                         k[2 * e + 1] = 5,
                             k[2 * e] = H(e, 5);
-                    E = new T(_,b,a + 1,s,p),
+                    E = new T(w,b,a + 1,s,p),
                         P = new T(k,y,0,c,p),
                         C = new T(new Array(0),v,0,l,7)
                 }(),
@@ -2363,7 +2388,7 @@ i = function() {
                             for (W(e, e.dyn_ltree, e.l_desc.max_code),
                                      W(e, e.dyn_dtree, e.d_desc.max_code),
                                      V(e, e.bl_desc),
-                                     t = l - 1; t >= 3 && 0 === e.bl_tree[2 * w[t] + 1]; t--)
+                                     t = l - 1; t >= 3 && 0 === e.bl_tree[2 * _[t] + 1]; t--)
                                 ;
                             return e.opt_len += 3 * (t + 1) + 5 + 5 + 4,
                                 t
@@ -2371,14 +2396,14 @@ i = function() {
                         o = e.opt_len + 3 + 7 >>> 3,
                     (i = e.static_len + 3 + 7 >>> 3) <= o && (o = i)) : o = i = n + 5,
                         n + 4 <= o && -1 !== t ? X(e, t, n, r) : 4 === e.strategy || i === o ? (N(e, 2 + (r ? 1 : 0), 3),
-                            F(e, _, k)) : (N(e, 4 + (r ? 1 : 0), 3),
+                            F(e, w, k)) : (N(e, 4 + (r ? 1 : 0), 3),
                             function(e, t, n, r) {
                                 var o;
                                 for (N(e, t - 257, 5),
                                          N(e, n - 1, 5),
                                          N(e, r - 4, 4),
                                          o = 0; o < r; o++)
-                                    N(e, e.bl_tree[2 * w[o] + 1], 3);
+                                    N(e, e.bl_tree[2 * _[o] + 1], 3);
                                 q(e, e.dyn_ltree, t - 1),
                                     q(e, e.dyn_dtree, n - 1)
                             }(e, e.l_desc.max_code + 1, e.d_desc.max_code + 1, s + 1),
@@ -2401,7 +2426,7 @@ i = function() {
                 ,
                 t._tr_align = function(e) {
                     N(e, 2, 3),
-                        B(e, d, _),
+                        B(e, d, w),
                         function(e) {
                             16 === e.bi_valid ? (I(e, e.bi_buf),
                                 e.bi_buf = 0,
@@ -2776,9 +2801,10 @@ i = function() {
             }
         }
     ])
-}
-function get_pdd(thref) {
-    href = thref
+};
+
+function get_pdd() {
+
     return i()()['messagePackSync']()
 }
-console.log(get_pdd('http://yangkeduo.com'))
+console.info(get_pdd())
